@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prakti Sani Regelwerk – LSMD</title>
+
+<style>
+:root {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --primary: #4de3c1;
+  --text: #e6f1ff;
+  --muted: #9fb3c8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+.md-logo {
+  width: 80px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+/* NAVIGATION */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 25px auto;
+}
+
+.nav-tabs a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-tabs a:hover {
+  color: var(--primary);
+}
+
+/* SEARCH */
+.search-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* CONTENT */
+section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 16px;
+}
+
+section h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+/* Regeln */
+.rule {
+  margin-bottom: 15px;
+}
+
+.entfaellt {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* GALLERY */
+.gallery {
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="md-logo1.png" alt="MD Logo" class="md-logo">
+  <h1>📘 Regelwerk Prakti/Sani-Ausbilder – LSMD</h1>
+  <p>Qualität, Struktur und Professionalität innerhalb der Prakti Sani Abteilung</p>
+</header>
+
+<nav class="nav-tabs">
+  <a href="#allgemein">Allgemein</a>
+  <a href="#kommunikation">Kommunikation</a>
+  <a href="#pruefung">Prüfungen</a>
+  <a href="#doku">Dokumente</a>
+  <a href="#motivation">Motivation</a>
+  <a href="#dienstkleidung">Dienstkleidung</a>
+</nav>
+
+<div class="search-box">
+  <input type="text" placeholder="Regel suchen..." onkeyup="searchRules(this.value)">
+</div>
+
+<section id="allgemein">
+<h2>🛡 Allgemeine Regeln</h2>
+
+<div class="rule"><b>§1 Vorbildfunktion</b><br>Ausbilder repräsentieren das LSMD. Respektvolles Verhalten ist Pflicht.</div>
+
+<div class="rule"><b>§2 Fachliche Kompetenz</b><br>Kenntnis aller relevanten Vorschriften ist verpflichtend.</div>
+
+<div class="rule"><b>§3 Teamarbeit</b><br>Teamwork ist essenziell. Fehler werden konstruktiv angesprochen.</div>
+
+<div class="rule"><b>§4 Mindestaktivität</b><br>Mindestens 6 Punkte pro Woche.</div>
+
+<div class="rule"><b>§5 Dienstkleidung</b><br>Kleiderordnung ist verpflichtend.</div>
+</section>
+
+<section id="kommunikation">
+<h2>🔄 Kommunikation</h2>
+
+<div class="rule"><b>§8 Absprache</b><br>
+<p class="entfaellt">Jede Aufgabe erfordert Absprache. Eigenmächtiges Handeln ist zu vermeiden.</p>
+</div>
+</section>
+
+<section id="pruefung">
+<h2>📋 Prüfungen & Einstellungen</h2>
+
+<div class="rule"><b>§9 Durchführung</b><br>
+Prüfungen finden im Prakti/Sani Raum oder Discord Talks statt.
+</div>
+
+<div class="rule"><b>§10 Ausbilderverteilung</b><br>
+Maximal 2 Ausbilder pro Prüfung, Ausnahmen nach Absprache.
+</div>
+</section>
+
+<section id="doku">
+<h2>🗂 Dokumentation</h2>
+
+<div class="rule"><b>§15 Dokumente</b><br>
+Vertrauliche Dokumente dürfen nicht weitergegeben werden.
+</div>
+</section>
+
+<section id="motivation">
+<h2>💬 Motivation</h2>
+
+<div class="rule"><b>§16 Engagement</b><br>
+Neue Praktikanten sollen motiviert und gebunden werden.
+</div>
+</section>
+
+<section id="dienstkleidung" class="gallery">
+<h2>👕 Dienstkleidung</h2>
+<img src="praktisani-dienstkleidung.png" alt="Dienstkleidung Prakti Sani">
+</section>
+
+<footer>
+Made by Bonez Tranquile x Kapkan Aveli
+</footer>
+
+<script>
+function searchRules(text) {
+  text = text.toLowerCase();
+  document.querySelectorAll('.rule').forEach(rule => {
+    rule.style.display = rule.innerText.toLowerCase().includes(text) ? '' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
