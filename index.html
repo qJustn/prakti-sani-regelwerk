@@ -29,7 +29,6 @@ body {
 header {
   text-align: center;
   padding: 40px 20px 20px;
-  position: relative;
 }
 
 .md-logo {
@@ -46,11 +45,11 @@ header h1 {
 header p {
   color: var(--muted);
   font-size: 0.95rem;
-  max-width: 700px;
+  max-width: 750px;
   margin: 10px auto 0;
 }
 
-/* NAVIGATION */
+/* NAV */
 .nav-tabs {
   display: flex;
   justify-content: center;
@@ -77,7 +76,7 @@ header p {
 
 .search-box input {
   width: 90%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 10px;
   border-radius: 8px;
   border: none;
@@ -87,7 +86,7 @@ header p {
 section {
   max-width: 1000px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 25px;
   background: var(--card);
   border-radius: 16px;
 }
@@ -97,9 +96,10 @@ section h2 {
   margin-top: 0;
 }
 
-/* Regeln */
+/* RULES */
 .rule {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  line-height: 1.5;
 }
 
 .entfaellt {
@@ -140,15 +140,17 @@ footer {
 <header>
   <img src="md-logo1.png" alt="MD Logo" class="md-logo">
   <h1>📘 Regelwerk Prakti/Sani-Ausbilder – LSMD</h1>
-  <p>Qualität, Struktur und Professionalität innerhalb der Prakti Sani Abteilung</p>
+  <p>Dieses Regelwerk dient der Sicherstellung von Qualität, Struktur und Professionalität innerhalb der Prakti Sani Abteilung.</p>
 </header>
 
 <nav class="nav-tabs">
   <a href="#allgemein">Allgemein</a>
   <a href="#kommunikation">Kommunikation</a>
   <a href="#pruefung">Prüfungen</a>
-  <a href="#doku">Dokumente</a>
+  <a href="#doku">Dokumentation</a>
   <a href="#motivation">Motivation</a>
+  <a href="#paten">Paten</a>
+  <a href="#warnsystem">Warnsystem</a>
   <a href="#dienstkleidung">Dienstkleidung</a>
 </nav>
 
@@ -159,22 +161,40 @@ footer {
 <section id="allgemein">
 <h2>🛡 Allgemeine Regeln</h2>
 
-<div class="rule"><b>§1 Vorbildfunktion</b><br>Ausbilder repräsentieren das LSMD. Respektvolles Verhalten ist Pflicht.</div>
+<div class="rule"><b>§1 Vorbildfunktion</b><br>
+Alle Ausbilder repräsentieren das LSMD und tragen eine Vorbildfunktion. Respektloses Verhalten führt zum sofortigen Ausschluss aus der Abteilung.
+</div>
 
-<div class="rule"><b>§2 Fachliche Kompetenz</b><br>Kenntnis aller relevanten Vorschriften ist verpflichtend.</div>
+<div class="rule"><b>§2 Fachliche Kompetenz</b><br>
+Ausbilder handeln nach bestem Wissen und Gewissen und müssen alle relevanten Dienstvorschriften kennen.
+</div>
 
-<div class="rule"><b>§3 Teamarbeit</b><br>Teamwork ist essenziell. Fehler werden konstruktiv angesprochen.</div>
+<div class="rule"><b>§3 Teamarbeit</b><br>
+Teamwork ist essenziell. Fehler werden konstruktiv und respektvoll angesprochen.
+</div>
 
-<div class="rule"><b>§4 Mindestaktivität</b><br>Mindestens 6 Punkte pro Woche.</div>
+<div class="rule"><b>§4 Mindestaktivität</b><br>
+Jeder Ausbilder muss wöchentlich mindestens 6 Punkte (z. B. Einstellungen oder Prüfungen) sammeln.
+</div>
 
-<div class="rule"><b>§5 Dienstkleidung</b><br>Kleiderordnung ist verpflichtend.</div>
+<div class="rule"><b>§5 Dienstkleidung</b><br>
+Die vorgegebene Kleiderordnung ist verpflichtend. Verstöße werden sanktioniert.
+</div>
+
+<div class="rule"><b>§6 Wöchentliche Besprechung</b><br>
+Jeden Freitag zwischen 19:00 und 22:00 Uhr findet eine verpflichtende interne Ausbilderbesprechung im Discord statt.
+</div>
+
+<div class="rule"><b>§7 Werbung</b><br>
+Jeder Ausbilder muss wöchentlich mindestens 6 Werbungen auf LifeInvader! oder per Announce schalten.
+</div>
 </section>
 
 <section id="kommunikation">
 <h2>🔄 Kommunikation</h2>
 
-<div class="rule"><b>§8 Absprache</b><br>
-<p class="entfaellt">Jede Aufgabe erfordert Absprache. Eigenmächtiges Handeln ist zu vermeiden.</p>
+<div class="rule"><b>§8 Absprache bei Aufgaben</b><br>
+<p class="entfaellt">Egal ob Ticketbearbeitung, Einstellung, Werbung oder Prüfung – Absprache ist Pflicht.</p>
 </div>
 </section>
 
@@ -182,16 +202,32 @@ footer {
 <h2>📋 Prüfungen & Einstellungen</h2>
 
 <div class="rule"><b>§9 Durchführung</b><br>
-Prüfungen finden im Prakti/Sani Raum oder Discord Talks statt.
+Einstellungen finden im Prakti/Sani Raum oder in den vorgesehenen Discord-Talks statt.
 </div>
 
 <div class="rule"><b>§10 Ausbilderverteilung</b><br>
-Maximal 2 Ausbilder pro Prüfung, Ausnahmen nach Absprache.
+Maximal 2 Ausbilder pro Einstellung oder Prüfung. Ausnahmen nur bei hohem Andrang.
+</div>
+
+<div class="rule"><b>§11 Zeitangaben</b><br>
+Bewerber sind vorab über die ungefähre Dauer der Gespräche zu informieren.
+</div>
+
+<div class="rule"><b>§12 Blaues Blatt</b><br>
+Komplexe Inhalte müssen vom Bewerber eigenständig erklärt werden.
+</div>
+
+<div class="rule"><b>§13 Prüfung: Praktikant darf alleine fahren</b><br>
+Diese Prüfung ist regelmäßig und sorgfältig durchzuführen.
+</div>
+
+<div class="rule"><b>§14 Vorerfahrung abfragen</b><br>
+Bei jeder Einstellung ist zu Beginn zu klären, wie lange der Bewerber bereits aktiv ist.
 </div>
 </section>
 
 <section id="doku">
-<h2>🗂 Dokumentation</h2>
+<h2>🗂 Dokumentation & Verwaltung</h2>
 
 <div class="rule"><b>§15 Dokumente</b><br>
 Vertrauliche Dokumente dürfen nicht weitergegeben werden.
@@ -199,10 +235,34 @@ Vertrauliche Dokumente dürfen nicht weitergegeben werden.
 </section>
 
 <section id="motivation">
-<h2>💬 Motivation</h2>
+<h2>💬 Motivation & Mitarbeiterbindung</h2>
 
-<div class="rule"><b>§16 Engagement</b><br>
-Neue Praktikanten sollen motiviert und gebunden werden.
+<div class="rule"><b>§16 Engagement fördern</b><br>
+Neue Praktikanten sollen aktiv motiviert und eingebunden werden.
+</div>
+
+<div class="rule"><b>§17 Anwerbung</b><br>
+Engagierte Allgemeinmediziner sollen gezielt angesprochen werden.
+</div>
+</section>
+
+<section id="paten">
+<h2>🧭 Paten & Struktur</h2>
+
+<div class="rule"><b>§18 Patenzuweisung</b><br>
+Neue Praktikanten werden direkt einer Patengruppe zugewiesen.
+</div>
+
+<div class="rule"><b>§19 Disziplin & Professionalität</b><br>
+Keine Streitigkeiten um Punkte. Jede Einstellung erfolgt professionell.
+</div>
+</section>
+
+<section id="warnsystem">
+<h2>⚠️ Abteilung Warnsystem</h2>
+
+<div class="rule"><b>§20 Warnsystem</b><br>
+Ab 3 Warns erfolgt automatisch der Ausschluss aus der Abteilung. Schwere Verstöße führen zum sofortigen Rauswurf.
 </div>
 </section>
 
